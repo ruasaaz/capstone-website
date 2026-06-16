@@ -445,11 +445,77 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-secondary);
 }
 
+/* Architecture Section */
+.architecture-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.architecture-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
 /* Demo Section */
 .media-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+}
+
+.figma-link-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.figma-qr {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.figma-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.figma-overlay i {
+    font-size: 2.5rem;
+    color: var(--brand-primary);
+}
+
+.figma-link-wrapper:hover .figma-qr {
+    transform: scale(1.05);
+}
+
+.figma-link-wrapper:hover .figma-overlay {
+    opacity: 1;
 }
 
 .media-card {
