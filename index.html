@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAJADIGI - Capstone Project FILKOM</title>
-    <meta name="description" content="Perancangan Super App Majadigi Berbasis Arsitektur Modular Monolith untuk Optimalisasi Layanan Publik">
-    
+    <meta name="description"
+        content="Perancangan Super App Majadigi Berbasis Arsitektur Modular Monolith untuk Optimalisasi Layanan Publik">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Icons (Phosphor Icons) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
     <link rel="icon" type="image/png" href="assets/logomajadigi1.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Background Elements -->
     <div class="blob blob-1"></div>
@@ -52,7 +57,7 @@
 
     <header class="hero">
         <div class="hero-content reveal">
-            <span class="badge">Capstone Project 2024</span>
+            <span class="badge">Capstone Project 2026</span>
             <h1 class="hero-title">Perancangan Super App <span>Majadigi</span></h1>
             <p class="hero-subtitle">Berbasis Arsitektur Modular Monolith untuk Optimalisasi Layanan Publik</p>
             <div class="hero-actions">
@@ -73,7 +78,9 @@
                     <div class="card-icon">
                         <i class="ph-duotone ph-buildings"></i>
                     </div>
-                    <p><strong>MAJADIGI (Majapahit Digital)</strong> adalah platform resmi Pemprov Jawa Timur yang mengintegrasikan layanan publik dari berbagai Organisasi Perangkat Daerah (OPD) dalam satu ekosistem digital menggunakan sistem <em>Single Sign-On (SSO)</em>.</p>
+                    <p><strong>MAJADIGI (Majapahit Digital)</strong> adalah platform resmi Pemprov Jawa Timur yang
+                        mengintegrasikan layanan publik dari berbagai Organisasi Perangkat Daerah (OPD) dalam satu
+                        ekosistem digital menggunakan sistem <em>Single Sign-On (SSO)</em>.</p>
                 </div>
             </div>
         </section>
@@ -88,12 +95,14 @@
                     <div class="glass-card">
                         <i class="ph-duotone ph-plugs"></i>
                         <h3>Fragmentasi Layanan</h3>
-                        <p>Mayoritas fitur masih berupa tautan luar (Level 1) yang mengalihkan pengguna ke browser eksternal, sehingga alur proses belum end-to-end.</p>
+                        <p>Mayoritas fitur masih berupa tautan luar (Level 1) yang mengalihkan pengguna ke browser
+                            eksternal, sehingga alur proses belum end-to-end.</p>
                     </div>
                     <div class="glass-card">
                         <i class="ph-duotone ph-stack"></i>
                         <h3>Arsitektur Monolithic</h3>
-                        <p>Semua modul digabung dalam satu paket aplikasi, membuat performa lambat dan membebani perangkat low-end.</p>
+                        <p>Semua modul digabung dalam satu paket aplikasi, membuat performa lambat dan membebani
+                            perangkat low-end.</p>
                     </div>
                     <div class="glass-card">
                         <i class="ph-duotone ph-trend-down"></i>
@@ -118,15 +127,19 @@
                 <div class="goals-list">
                     <div class="goal-item glass-card">
                         <div class="goal-number">01</div>
-                        <p>Merancang blueprint sistem berbasis <strong>Modular Monolith</strong> untuk menjamin keamanan serta kemudahan pengembangan antar-layanan instansi.</p>
+                        <p>Merancang blueprint sistem berbasis <strong>Modular Monolith</strong> untuk menjamin keamanan
+                            serta kemudahan pengembangan antar-layanan instansi.</p>
                     </div>
                     <div class="goal-item glass-card">
                         <div class="goal-number">02</div>
-                        <p>Membangun <strong>10 layanan publik terintegrasi</strong> dalam satu aplikasi Mobile Super App secara end-to-end.</p>
+                        <p>Membangun <strong>10 layanan publik terintegrasi</strong> dalam satu aplikasi Mobile Super
+                            App secara end-to-end.</p>
                     </div>
                     <div class="goal-item glass-card">
                         <div class="goal-number">03</div>
-                        <p>Memangkas ukuran unduhan awal aplikasi sebesar <strong>kurang dari 30-40%</strong> lewat fitur <em>Dynamic Feature Loading</em> agar tetap ringan di ponsel berspesifikasi rendah.</p>
+                        <p>Memangkas ukuran unduhan awal aplikasi sebesar <strong>kurang dari 30-40%</strong> lewat
+                            fitur <em>Dynamic Feature Loading</em> agar tetap ringan di ponsel berspesifikasi rendah.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -143,21 +156,24 @@
                         <div class="solution-content">
                             <span class="tech-badge">UI/UX & Business Process</span>
                             <h3>Layanan End-to-End</h3>
-                            <p>Mengubah proses bisnis agar seluruh transaksi selesai langsung di dalam backend MAJADIGI lewat OPD Service API dan PostgreSQL Schema Isolation.</p>
+                            <p>Mengubah proses bisnis agar seluruh transaksi selesai langsung di dalam backend MAJADIGI
+                                lewat OPD Service API dan PostgreSQL Schema Isolation.</p>
                         </div>
                     </div>
                     <div class="solution-card glass-card">
                         <div class="solution-content">
                             <span class="tech-badge">NestJS</span>
                             <h3>Arsitektur Modular Monolith</h3>
-                            <p>Memecah kode program backend menjadi modul mandiri yang terisolasi rapi untuk meminimalkan konflik deployment.</p>
+                            <p>Memecah kode program backend menjadi modul mandiri yang terisolasi rapi untuk
+                                meminimalkan konflik deployment.</p>
                         </div>
                     </div>
                     <div class="solution-card glass-card">
                         <div class="solution-content">
                             <span class="tech-badge">Flutter</span>
                             <h3>Dynamic Feature Loading</h3>
-                            <p>Memangkas ukuran aplikasi inti awal. Modul layanan lainnya baru diunduh dinamis saat dibutuhkan saja agar aplikasi tetap ringan.</p>
+                            <p>Memangkas ukuran aplikasi inti awal. Modul layanan lainnya baru diunduh dinamis saat
+                                dibutuhkan saja agar aplikasi tetap ringan.</p>
                         </div>
                     </div>
                 </div>
@@ -185,7 +201,8 @@
                 <div class="media-grid">
                     <div class="media-card glass-card figma-card">
                         <h3><i class="ph-duotone ph-figma-logo"></i> Figma Design</h3>
-                        <a href="https://www.figma.com/design/NpU8iX86OwkBGUS7E6j6ya/Capstone-Kel-9?node-id=673-2821&t=zHyy68oLeRampaWV-1" target="_blank" class="figma-link-wrapper">
+                        <a href="https://www.figma.com/design/NpU8iX86OwkBGUS7E6j6ya/Capstone-Kel-9?node-id=673-2821&t=zHyy68oLeRampaWV-1"
+                            target="_blank" class="figma-link-wrapper">
                             <img src="assets/figmaqr.png" alt="Figma QR Code" class="figma-qr">
                             <div class="figma-overlay">
                                 <i class="ph-bold ph-arrow-square-out"></i>
@@ -226,7 +243,8 @@
                             <h3>Fathyya Nahda</h3>
                             <span class="role">Project Manager</span>
                             <span class="nim">235150401111065</span>
-                            <p class="desc">"Menjadi Project Manager di proyek ini mengajarkan saya banyak hal tentang koordinasi tim dan manajemen waktu."</p>
+                            <p class="desc">"Menjadi Project Manager di proyek ini mengajarkan saya banyak hal tentang
+                                koordinasi tim dan manajemen waktu."</p>
                         </div>
                         <div class="social-links">
                             <a href="#"><i class="ph-fill ph-envelope-simple"></i></a>
@@ -243,7 +261,8 @@
                             <h3>Errol Muhammad Y. H.</h3>
                             <span class="role">System Analyst</span>
                             <span class="nim">235150407111011</span>
-                            <p class="desc">"Menganalisis sistem yang kompleks menjadi modul-modul efisien adalah tantangan yang sangat memuaskan."</p>
+                            <p class="desc">"Menganalisis sistem yang kompleks menjadi modul-modul efisien adalah
+                                tantangan yang sangat memuaskan."</p>
                         </div>
                         <div class="social-links">
                             <a href="#"><i class="ph-fill ph-envelope-simple"></i></a>
@@ -260,7 +279,8 @@
                             <h3>Poeti Jelita</h3>
                             <span class="role">Quality Assurance</span>
                             <span class="nim">235150701111032</span>
-                            <p class="desc">"Memastikan setiap alur aplikasi berjalan tanpa bug dan sesuai dengan kebutuhan user adalah prioritas utama saya."</p>
+                            <p class="desc">"Memastikan setiap alur aplikasi berjalan tanpa bug dan sesuai dengan
+                                kebutuhan user adalah prioritas utama saya."</p>
                         </div>
                         <div class="social-links">
                             <a href="#"><i class="ph-fill ph-envelope-simple"></i></a>
@@ -277,7 +297,8 @@
                             <h3>Ruasa Azizan Zihni</h3>
                             <span class="role">Developer</span>
                             <span class="nim">235150301111046</span>
-                            <p class="desc">"Membangun arsitektur Modular Monolith dan fitur Dynamic Loading memberikan pengalaman coding yang luar biasa."</p>
+                            <p class="desc">"Membangun arsitektur Modular Monolith dan fitur Dynamic Loading memberikan
+                                pengalaman coding yang luar biasa."</p>
                         </div>
                         <div class="social-links">
                             <a href="#"><i class="ph-fill ph-envelope-simple"></i></a>
@@ -294,7 +315,8 @@
                             <h3>Alika Syahfitri</h3>
                             <span class="role">UI/UX Designer</span>
                             <span class="nim">235150400111042</span>
-                            <p class="desc">"Merancang antarmuka yang intuitif dan modern untuk Super App merupakan pengalaman desain yang menantang sekaligus seru."</p>
+                            <p class="desc">"Merancang antarmuka yang intuitif dan modern untuk Super App merupakan
+                                pengalaman desain yang menantang sekaligus seru."</p>
                         </div>
                         <div class="social-links">
                             <a href="#"><i class="ph-fill ph-envelope-simple"></i></a>
@@ -319,4 +341,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
